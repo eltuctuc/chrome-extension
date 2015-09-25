@@ -1,0 +1,16 @@
+{
+  "name": "chrome-extension-pre",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eltuctuc/chrome-extension-pre.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "readmeFilename": "README.md",
+  "private": true,
+  "author": "Enrico Reinsdorf",
+  "license": "ISC"
+}
