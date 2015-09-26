@@ -28,4 +28,21 @@
             chrome.tabs.sendMessage(tab.id, {type: "colors-div", color: msg.color});
         });
     };
+
+    /**
+     * listening for an event / long-lived connections
+     * coming from devtools
+     */
+    chrome.extension.onConnect.addListener(function (port) {
+        port.onMessage.addListener(function () {
+            switch (port.name) {
+                case "color-divs-port":
+                    colorDivs({
+                        text: "red!",
+                        color: "#F00"
+                    });
+                    break;
+            }
+        });
+    });
 })();
