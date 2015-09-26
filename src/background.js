@@ -2,6 +2,22 @@
     "use strict";
 
     /**
+     * listening for an event / one-time requests
+     * coming from the popup
+     */
+    chrome.extension.onMessage.addListener(function (request) {
+        switch (request.type) {
+            case "color-divs":
+                colorDivs({
+                    text: "blue!",
+                    color: "#00F"
+                });
+                break;
+        }
+        return true;
+    });
+
+    /**
      * send a message to the content script
      * @param {Object} msg
      * @param {String} msg.text
