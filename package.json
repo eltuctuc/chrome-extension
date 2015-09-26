@@ -1,16 +1,34 @@
 {
-  "name": "chrome-extension-pre",
+  "name": "chrome-extension",
+  "title": "Chrome Extension",
   "version": "0.0.1",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eltuctuc/chrome-extension-pre.git"
+    "url": "git+https://github.com/eltuctuc/chrome-extension.git"
   },
+  "homepage": "https://github.com/eltuctuc/chrome-extension",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "readmeFilename": "README.md",
   "private": true,
-  "author": "Enrico Reinsdorf",
-  "license": "ISC"
+  "author": {
+    "name": "Enrico Reinsdorf",
+    "url": "http://re-design.de"
+  },
+  "license": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/eltuctuc/chrome-extension/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1"
+  }
 }
