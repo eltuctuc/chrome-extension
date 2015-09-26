@@ -27,5 +27,7 @@
 
   "devtools_page": "devtools/devtools.html",
 
-  "omnibox": {"keyword": "ce"}
+  "omnibox": {"keyword": "ce"},
+
+  "chrome_url_overrides": {"newtab": "newtab/newtab.html"}
 }
