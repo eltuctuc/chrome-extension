@@ -45,4 +45,23 @@
             }
         });
     });
+
+    /**
+     * omnibox
+     */
+    chrome.omnibox.onInputChanged.addListener(function (text, suggest) {
+        suggest([{
+            content: "color-divs",
+            description: "Make everything green"
+        }]);
+    });
+
+    chrome.omnibox.onInputEntered.addListener(function (text) {
+        if (text === "color-divs") {
+            colorDivs({
+                text: "green!",
+                color: "#0F0"
+            });
+        }
+    });
 })();
