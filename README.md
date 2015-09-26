@@ -1,4 +1,4 @@
-# Chrome Extension Pre
+# Chrome Extension
 
 ...
 
